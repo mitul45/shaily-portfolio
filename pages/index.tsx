@@ -11,7 +11,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>It's great to have you here :)</h1>
+        <h1 className={styles.title}>It is great to have you here :)</h1>
       </main>
     </div>
   );
