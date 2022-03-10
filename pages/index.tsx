@@ -10,8 +10,9 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>It is great to have you here :)</h1>
+      <main className="flex flex-col h-screen justify-center items-center">
+        <h1 className="text-2xl">Hi! I'm Shaily.</h1>
+        <h2 className="text-xl">It is great to have you here :)</h2>
       </main>
     </div>
   );
