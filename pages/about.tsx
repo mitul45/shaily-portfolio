@@ -14,7 +14,7 @@ const About: NextPage = () => {
       <main>
         <div className="container mx-auto my-32 max-w-container flex">
           <div className="w-3/4">
-            <h1 className="text-2xl my-4">Hi, I'm Shaily!</h1>
+            <h1 className="text-2xl my-4">Hi, I&apos;m Shaily!</h1>
           </div>
           <div>
             <Image
