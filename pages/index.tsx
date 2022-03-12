@@ -27,19 +27,49 @@ const Home: NextPage = () => (
           <Image src={ProfileImage} alt="Profile photo" />
         </div>
         <div className={styles.heroContent}>
-          <h4 className={styles.heroSubTitle}>Hi, I am</h4>
-          <h1 className={styles.heroTitle}>Shaily</h1>
-          <h4 className={styles.heroSubTitle}>UX / UI Designer</h4>
-          <p>
-            Having my humble roots in Architecture, I am a curious designer who
-            likes to focus on human centric experience rather than building just
-            a product or an environment.
-          </p>
-          <p>
-            I seek to bring harmony and balance in the world with my creative
-            and critical design thinking.
-          </p>
-          <p>Explore. Build. Contribute.</p>
+          <div>
+            <h4 className={styles.heroSubTitle}>Hi, I am</h4>
+            <h1 className={styles.heroTitle}>Shaily</h1>
+            <h4 className={styles.heroSubTitle}>UX / UI Designer</h4>
+            <p>
+              Having my humble roots in Architecture, I am a curious designer
+              who likes to focus on human centric experience while building just
+              a product.
+            </p>
+            <p>
+              I seek to bring harmony and balance in the world with my creative
+              and critical design thinking.
+            </p>
+            <p>Explore. Build. Contribute.</p>
+          </div>
+          <div>
+            <a
+              className={styles.linkedin}
+              href="https://www.linkedin.com/in/shaily-gandhi/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src="/LinkedIn.svg"
+                alt="LinkedIn Logo"
+                width={32}
+                height={32}
+              />
+            </a>
+            <a
+              className={styles.item}
+              href="https://medium.com/@shailymgandhi"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src="/Medium.svg"
+                alt="Medium Logo"
+                width={32}
+                height={32}
+              />
+            </a>
+          </div>
         </div>
       </div>
       <div className="container">

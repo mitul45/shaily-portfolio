@@ -1,17 +1,19 @@
 .hero {
   display: flex;
+  justify-content: space-between;
   /* height: calc(100vh - 52px); */
-  align-items: center;
   margin: 96px auto;
 }
 
 .profile {
-  width: 50%;
+  width: 45%;
 }
 
 .heroContent {
-  width: 50%;
-  padding-left: 96px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 45%;
 }
 
 .heroTitle {
@@ -33,4 +35,8 @@
   grid-template-columns: 1fr 1fr;
   gap: 32px;
   margin-bottom: 84px;
+}
+
+.linkedin {
+  margin-right: 16px;
 }
