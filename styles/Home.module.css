@@ -1,0 +1,45 @@
+.container {
+  max-width: 960px;
+  margin: auto;
+}
+
+.hero {
+  display: flex;
+  /* height: calc(100vh - 52px); */
+  align-items: center;
+  margin: 96px auto;
+}
+
+.profile {
+  width: 50%;
+}
+
+.heroContent {
+  width: 50%;
+  padding-left: 96px;
+}
+
+.heroTitle {
+  font-size: 54px;
+}
+
+.heroSubTitle {
+  font-size: 30px;
+  margin: 0;
+}
+
+.center {
+  text-align: center;
+}
+
+.work {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-bottom: 84px;
+}
