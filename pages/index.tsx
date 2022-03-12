@@ -20,9 +20,9 @@ const Home: NextPage = () => (
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
+    <Header />
     <main>
-      <Header />
-      <div className={cx(styles.hero, styles.container)}>
+      <div className={cx(styles.hero, "container")}>
         <div className={styles.profile}>
           <Image src={ProfileImage} alt="Profile photo" />
         </div>
@@ -42,28 +42,28 @@ const Home: NextPage = () => (
           <p>Explore. Build. Contribute.</p>
         </div>
       </div>
-      <div className={styles.container}>
+      <div className="container">
         <h1 className={styles.work}>Work</h1>
         <div className={styles.projects}>
           <Project
-            Image={NutriScanImage}
+            image={NutriScanImage}
             title="NutriScan"
             desc="Helping users choose healthier food products"
           />
           <Project
-            Image={PeeledOrangeImage}
+            image={PeeledOrangeImage}
             title="Peeled Orange"
             desc="An online magazine for busy intellactuals"
           />
           <Project
-            Image={GoogleKeepImage}
+            image={GoogleKeepImage}
             title="Google Keep"
-            desc="Adding a new feature – Travel template."
+            desc="Adding a new feature for travel enthusiastics to plan better"
           />
           <Project
-            Image={MarmitasImage}
+            image={MarmitasImage}
             title="Marmitas Da Horta"
-            desc="A vegan meal service"
+            desc="Designing an e-commerce website for a vegan meal service"
           />
         </div>
       </div>
@@ -73,15 +73,15 @@ const Home: NextPage = () => (
 );
 
 const Project = (props: {
-  Image: StaticImageData;
+  image: StaticImageData;
   title: string;
   desc: string;
 }) => (
   <>
     <div className={styles.project}>
-      <Image src={props.Image} alt="Profile photo" />
-      <h2 className={styles.center}>{props.title}</h2>
-      <p className={styles.center}>{props.desc}</p>
+      <Image src={props.image} alt="Profile photo" />
+      <h2 className="center">{props.title}</h2>
+      <p className="center">{props.desc}</p>
     </div>
   </>
 );
