@@ -29,28 +29,28 @@ const Work: NextPage = () => (
           title="NutriScan"
           subtitle="Helping users choose healthier food products"
           desc="How might we help users to choose healthier products in the market, to maintain a health-conscious lifestyle?"
-          link="/projects/nutriscan"
+          link="/work/nutriscan"
         />
         <Project
           image={PeeledOrangeImage}
           title="Peeled Orage"
           subtitle="An online magazine for busy intellactuals"
           desc="How might we help users to indulge more in self-care and explore new passion despite having busy life?"
-          link="/projects/peeled-orange"
+          link="/work/peeled-orange"
         />
         <Project
           image={GoogleKeepImage}
           title="Google Keep"
           subtitle="Adding a new feature for travel enthusiastics to plan better"
           desc="How might we help Google Keep users make notes in a more structured way to better organize their travel information?"
-          link="/projects/google-keep"
+          link="/work/google-keep"
         />
         <Project
           image={MarmitasImage}
           title="Marmitas Da Horta"
           subtitle="Designing an e-commerce website for a vegan meal service"
           desc="How might we help customers have a ready-made, tasty, home cooked meals to keep a healthy & eco-friendly lifestyle?"
-          link="/projects/marmitas"
+          link="/work/marmitas"
         />
       </div>
     </main>

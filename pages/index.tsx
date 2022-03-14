@@ -80,25 +80,25 @@ const Home: NextPage = () => (
             image={NutriScanImage}
             title="NutriScan"
             desc="Helping users choose healthier food products"
-            link="/projects/nutriscan"
+            link="/work/nutriscan"
           />
           <Project
             image={PeeledOrangeImage}
             title="Peeled Orange"
             desc="An online magazine for busy intellactuals"
-            link="/projects/peeled-orange"
+            link="/work/peeled-orange"
           />
           <Project
             image={GoogleKeepImage}
             title="Google Keep"
             desc="Adding a new feature for travel enthusiastics to plan better"
-            link="/projects/google-keep"
+            link="/work/google-keep"
           />
           <Project
             image={MarmitasImage}
             title="Marmitas Da Horta"
             desc="Designing an e-commerce website for a vegan meal service"
-            link="/projects/marmitas"
+            link="/work/marmitas"
           />
         </div>
       </div>
