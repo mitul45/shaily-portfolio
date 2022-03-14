@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import styles from "../../styles/CaseStudy.module.scss";
 
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
@@ -21,8 +22,8 @@ import EvolutionImage from "../../public/google-keep/evolution.jpeg";
 
 const ImgInP = (props: { src: StaticImageData; alt?: string }) => {
   return (
-    <p className="my-4">
-      <Image className="mx-auto" src={props.src} alt={props.alt} />
+    <p>
+      <Image src={props.src} alt={props.alt} />
     </p>
   );
 };
@@ -37,12 +38,12 @@ const GoogleKeep: NextPage = () => {
 
       <Header />
       <main>
-        <div className="container mx-auto my-32 max-w-container">
-          <h1 className="text-3xl my-4">Case study: Google Keep</h1>
-          <h2 className="text-2xl my-4 text-slate-500">
+        <div className="container">
+          <h1>Case study: Google Keep</h1>
+          <h2>
             Ironhack project-3: propose a feature
           </h2>
-          <p className="my-4">
+          <p>
             For this individual project, I was needed to study & analyze an
             already existing app and incorporate a new feature into the existing
             product. I chose{" "}
@@ -52,54 +53,54 @@ const GoogleKeep: NextPage = () => {
             app as I use it in my everyday life. The main focus of this project
             is on UI design.
           </p>
-          <p className="my-4">
-            <table className="table-auto">
+          <p>
+            <table>
               <tbody>
                 <tr>
-                  <td className="font-bold">Project:</td>
-                  <td className="pl-4">Add a feature</td>
+                  <td>Project:</td>
+                  <td>Add a feature</td>
                 </tr>
                 <tr>
-                  <td className="font-bold">Duraion:</td>
-                  <td className="pl-4">3 part-time weeks</td>
+                  <td>Duraion:</td>
+                  <td>3 part-time weeks</td>
                 </tr>
                 <tr>
-                  <td className="font-bold">Device:</td>
-                  <td className="pl-4">Mobile app for an Android version</td>
+                  <td>Device:</td>
+                  <td>Mobile app for an Android version</td>
                 </tr>
                 <tr>
-                  <td className="font-bold">App:</td>
-                  <td className="pl-4">Google Keep</td>
+                  <td>App:</td>
+                  <td>Google Keep</td>
                 </tr>
               </tbody>
             </table>
           </p>
           <ImgInP src={HeroImage} alt="Goole Keep Hero" />
-          <p className="my-4">
-            <h3 className="text-xl mb-2">Design Challenge</h3>
+          <p>
+            <h3>Design Challenge</h3>
             <i>
               How might I help Google Keep users make notes in a more structured
               way to better organize their travel information?
             </i>
           </p>
           <hr />
-          <p className="my-4">
-            <h3 className="text-xl mb-2">What is Google Keep?</h3>
+          <p>
+            <h3>What is Google Keep?</h3>
             <b>Google Keep</b> is a note-taking service included as part of the
             free, web-based Google Docs Editors suite offered by Google. It is
             available as a web application as well as a mobile app for Android
             and iOS, with a total of +1B users across the world.
           </p>
           <ImgInP src={AboutImage} alt="About Google Keep" />
-          <p className="my-4">
+          <p>
             The interface of the app is similar to a bulletin board with post-it
             notes. It is used for making different notes, lists such as grocery
             lists, books to read, movies to watch, things to pack for travel,
             etc.
           </p>
           <hr />
-          <p className="my-4">
-            <h3 className="text-xl mb-2">The thought behind the Idea</h3>
+          <p>
+            <h3>The thought behind the Idea</h3>
             The idea behind the new feature came in the picture when I wanted to
             plan my next trip to Paris. As a regular user of Google Keep, I
             started making notes of the information/suggestions I got from
@@ -108,31 +109,31 @@ const GoogleKeep: NextPage = () => {
             there was any new edition/suggestion.
           </p>
           <ImgInP src={OpportunityImage} alt="Opportunities and Goals" />
-          <p className="my-4">
+          <p>
             To check if my idea stands the ground, I did the feature comparison
             with 3 other such apps, to understand the functionality of
             note-taking apps, their features, and to locate the area of
             improvement for Google Keep.
           </p>
           <ImgInP src={FeatureComparisonImage} alt="Feature comparison chart" />
-          <p className="my-4">
+          <p>
             I did 5 user interviews to understand the people who use Google
             Keep, for what purpose they use it, what features they miss in it,
             and if they would like to use the new feature I was proposing.
           </p>
-          <p className="my-4">Here’s the excerpts of the interviews:</p>
+          <p>Here’s the excerpts of the interviews:</p>
           <ImgInP
             src={UserInterviewsImage}
             alt="Snippets from user interviews"
           />
-          <p className="my-4">
+          <p>
             Based on the response I got from conducting the interviews, I could
             clearly see the need for Google Keep to be able to offer wider
             possibilities, where users can use its simple yet more diverse
             application for purposes such as planning a trip, planning an event,
             reading lists etc.
           </p>
-          <p className="my-4">
+          <p>
             For my proposed feature, I narrowed down the requirements & made my
             goal clear to draft my proto persona, <b>Travel enthusiast Tyler</b>
             .
@@ -141,8 +142,8 @@ const GoogleKeep: NextPage = () => {
             src={TravelTylerImage}
             alt="Travel enthusiast Tyler persona"
           />
-          <p className="my-4">
-            <h3 className="text-xl mb-2">User Journey</h3>
+          <p>
+            <h3>User Journey</h3>
             From the user journey of Tyler, we could see that he started getting
             information from all different sorts of sources regarding planning
             his next trip. As a routine user of Google Keep, he starts to jot
@@ -153,7 +154,7 @@ const GoogleKeep: NextPage = () => {
             he has to keep checking the weather separately on the weather app
             for his travel dates.
           </p>
-          <p className="my-4">
+          <p>
             This journey revealed the opportunities we have to design some
             solutions that would help Tyler make different notes/lists
             efficiently. Like most of the young people of his generation, he
@@ -162,8 +163,8 @@ const GoogleKeep: NextPage = () => {
             better. Working through the user journey helped me understand the
             situation in-depth and derive the problem statement.
           </p>
-          <p className="my-4">
-            <h3 className="text-xl mb-2">Problem Statement</h3>
+          <p>
+            <h3>Problem Statement</h3>
             <blockquote>
               <p>
                 <i>
@@ -175,13 +176,13 @@ const GoogleKeep: NextPage = () => {
             </blockquote>
           </p>
           <hr />
-          <p className="my-4">
-            <h3 className="text-xl mb-2">Ideation</h3>
+          <p>
+            <h3>Ideation</h3>
             Based on the information I gathered about the possible solutions,
             here’s the new feature for Google Keep I want to introduce to all of
             you. It’s called ‘Travel Template’.
           </p>
-          <p className="my-4">
+          <p>
             As an existing user of Google Keep, travel enthusiast Tyler makes
             notes/reminders about booking for the flight/ hotel booking/ things
             to pack etc. So, the new feature comes in as soon as Tyler uses any
@@ -189,7 +190,7 @@ const GoogleKeep: NextPage = () => {
             for Google Keep.
           </p>
           <ImgInP src={PlanningTripImage} alt="Planning a trip?" />
-          <p className="my-4">
+          <p>
             Before moving forward with the design, I made a user flow for Tyler
             to follow him from opening the app to adding the different
             notes/lists needed to plan his travel.
@@ -198,12 +199,12 @@ const GoogleKeep: NextPage = () => {
             src={HappyPathImage}
             alt="Happy Path: Tyler plans his Paris trip"
           />
-          <p className="my-4">
-            <h3 className="text-xl mb-2">Lo-fi sketches</h3>
+          <p>
+            <h3>Lo-fi sketches</h3>
             <ImgInP src={LoFiImage} alt="Lo-fi sketches" />
           </p>
-          <p className="my-4">
-            <h3 className="text-xl mb-2">Usability testing</h3>
+          <p>
+            <h3>Usability testing</h3>
             Before I started creating my Hi-fi prototype, I conducted usability
             tests for Mid-fi prototype with 3 users to see if they see the new
             feature as part of the existing app & the flow and how they interact
@@ -211,7 +212,7 @@ const GoogleKeep: NextPage = () => {
             useful feedback which I incorporated into the design and worked
             towards making Hi-fi screens.
           </p>
-          <p className="my-4">
+          <p>
             <blockquote>
               <p>
                 <i>
@@ -219,7 +220,7 @@ const GoogleKeep: NextPage = () => {
                   doesn’t give me a clear flow.
                 </i>
               </p>
-              <p className="my-2">
+              <p>
                 <i>
                   The weather information is confusing. Is it the current
                   weather or for the travel dates?
@@ -228,11 +229,11 @@ const GoogleKeep: NextPage = () => {
               <p>Why there are ‘more buttons’ on every note?</p>
             </blockquote>
           </p>
-          <p className="my-4">
-            <h3 className="text-xl mb-2">Design System</h3>
+          <p>
+            <h3>Design System</h3>
             <i>“Design always loves constraints”</i>
           </p>
-          <p className="my-4">
+          <p>
             For this project, thinking about the feature, how to implement it
             with an existing brand, its design guidelines are more important.
             Reading through the brand guidelines, values gave me a clear base to
@@ -244,7 +245,7 @@ const GoogleKeep: NextPage = () => {
             src={DesignSystemImage}
             alt="Understanding the design system of Google Keep"
           />
-          <p className="my-4">
+          <p>
             Based on the theory coined by Brad frost, I could understand the
             importance of having an inventory to build a consistent design
             through the whole website/app.
@@ -253,7 +254,7 @@ const GoogleKeep: NextPage = () => {
             src={AtomicStructureImage}
             alt="Atomic structure of the app"
           />
-          <p className="my-4">
+          <p>
             Here are some of the components I made along the way I was creating
             the screens for the new feature.
           </p>
@@ -261,8 +262,8 @@ const GoogleKeep: NextPage = () => {
             src={ComponentsImage}
             alt="Screenshots of Variants & Components"
           />
-          <p className="my-4">
-            <h3 className="text-xl mb-2">Evolution of a screen</h3>
+          <p>
+            <h3>Evolution of a screen</h3>
             This is an example of how I developed a screen from Lo-fi to Hi-fi,
             with many design iterations, based on intuitions & insights I got
             from the user tests I did. Designing the <b>Add button</b> for the
@@ -272,11 +273,11 @@ const GoogleKeep: NextPage = () => {
             behavior.
           </p>
           <ImgInP src={EvolutionImage} alt="Evolution of a screen" />
-          <p className="my-4">
-            <h3 className="text-xl mb-2">Hi-fi prototype</h3>
+          <p>
+            <h3>Hi-fi prototype</h3>
             Once I completed all the screens, I created the Hi-fi prototype in
             Figma. The tasks for the prototype are:
-            <ul className="list-disc pl-4 mt-2">
+            <ul>
               <li>
                 Add a reminder to Google Keep, about booking tickets for the
                 Paris trip
@@ -288,7 +289,7 @@ const GoogleKeep: NextPage = () => {
               <li>Add ‘travel articles’ note to the travel template</li>
             </ul>
           </p>
-          <p className="my-4">
+          <p>
             <iframe
               width="640"
               height="680"
@@ -299,45 +300,45 @@ const GoogleKeep: NextPage = () => {
               allowFullScreen
             ></iframe>
           </p>
-          <p className="my-4">So, this is how it works:</p>
-          <p className="my-4">
+          <p>So, this is how it works:</p>
+          <p>
             Once the user adds the reminder in the existing app with any of the
             trigger words, the new app asks if the user is planning for a trip
             and wants to use the new feature- Travel template?
           </p>
-          <p className="my-4">
+          <p>
             Upon clicking on the ‘ Try now’ button, the user gets the search
             field to enter the travel destination & gets the calendar to add the
             travel dates respectively.
           </p>
-          <p className="my-4">
+          <p>
             Once filling up this information, the user gets the Travel template-
             with the destination as a title of the template, along with the
             travel dates mentioned. The user can also find the updated Google
             weather as part of the template.
           </p>
-          <p className="my-4">
+          <p>
             The user can find the reminder which he/she made, through which the
             new feature appeared, as part of this template.
           </p>
-          <p className="my-4">
+          <p>
             The template allows the user to directly access Google Maps & add
             the favorite/ want to visit places to it & have them updated in the
             Google Keep app as well.
           </p>
-          <p className="my-4">
+          <p>
             The user can start adding lists/notes with the ‘+’ button, where
             there are new features to upload a photo, embed a video, add text &
             save a link. This allows the user to make a note where a text can be
             added along with the photo or a video.
           </p>
-          <p className="my-4">
+          <p>
             Likewise, the user can keep on adding information to plan for the
             upcoming/next travel & be assured of having all the recommendations/
             suggestions gathered from friends to be found at one place in Google
             Keep.
           </p>
-          <p className="my-4">
+          <p>
             Please feel free to try the Travel template{" "}
             <a
               href="https://www.figma.com/proto/mDNxCxRJILbt1XinLNfvdG/P3%3A-Add-A-Feature---Shaily?page-id=2%3A4134&node-id=1395%3A3997&viewport=241%2C48%2C0.32&scaling=min-zoom&starting-point-node-id=1395%3A3997"
@@ -349,21 +350,21 @@ const GoogleKeep: NextPage = () => {
             ! :)
           </p>
           <hr />
-          <p className="my-4">
-            <h3 className="text-xl mb-2">Next steps</h3>I feel that I was
+          <p>
+            <h3>Next steps</h3>I feel that I was
             successful in adapting to the existing design system of Google Keep.
             What I would like to do is to test more users with the current Hi-fi
             prototype & gather more feedback regarding its functionality.
           </p>
-          <p className="my-4">
+          <p>
             Also, due to the limitation of time, I narrowed down the requirement
             to travel information, but it would be great to design all different
             kinds of templates to help users manage their notes more efficiently
             & easily.
           </p>
           <hr />
-          <p className="my-4">
-            <h3 className="text-xl mb-2">Learnings</h3>
+          <p>
+            <h3>Learnings</h3>
             This project being an individual project, it was challenging to
             manage the work & deliver the product on time. Sometimes, I was too
             much focused on the smaller aspect of the project, discussing with
@@ -371,14 +372,14 @@ const GoogleKeep: NextPage = () => {
             larger picture. Along the way, I learned the best practices and how
             to work smartly with components & variants.
           </p>
-          <p className="my-4">
+          <p>
             I loved working on the UI design and especially working within the
             constraints always intrigue me to put my efforts more to reach for
             the better. Google is well-known for its design, I could learn a
             lot.
           </p>
           <hr />
-          <p className="my-4">
+          <p>
             <i>Thanks for reading :)</i>
           </p>
         </div>

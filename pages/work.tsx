@@ -6,7 +6,7 @@ import cx from "classnames";
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import styles from "../styles/Work.module.css";
+import styles from "../styles/Work.module.scss";
 
 import GoogleKeepImage from "../public/home/Google keep.jpg";
 import MarmitasImage from "../public/home/Marmitas.jpg";

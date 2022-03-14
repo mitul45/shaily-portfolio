@@ -1,8 +1,8 @@
-import styles from "../styles/Footer.module.css";
+import styles from "../styles/Footer.module.scss";
 
 const Header = () => (
   <footer className={styles.footer}>
-    <div className={styles.footerContent}>
+    <div className={styles.content}>
       <section>
         <div className={styles.title}>Contat details</div>
         <a className={styles.item} href="mailto:shailymgandhi@gmail.com">

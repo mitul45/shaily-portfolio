@@ -1,0 +1,45 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  margin: 96px auto;
+
+  .profile {
+    width: 45%;
+  }
+
+  .heroContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 45%;
+
+    .linkedin {
+      margin-right: 16px;
+    }
+  }
+
+  .heroTitle {
+    font-size: 54px;
+  }
+
+  .heroSubTitle {
+    font-size: 30px;
+    margin: 0;
+  }
+}
+
+.work {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-bottom: 84px;
+
+  a:hover {
+    text-decoration: none;
+  }
+}

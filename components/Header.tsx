@@ -1,17 +1,17 @@
 import Link from "next/link";
-import styles from "../styles/Header.module.css";
+import styles from "../styles/Header.module.scss";
 
 const Header = () => {
   return (
     <header className={styles.header}>
-      <div className={styles.headerContent}>
+      <div className={styles.content}>
         <div>Shaily G.</div>
-        <div className={styles.headerLinksContainer}>
+        <div className={styles.links}>
           <Link href="/">
-            <a className={styles.headerLink}>Home</a>
+            <a className={styles.link}>Home</a>
           </Link>
           <Link href="/work">
-            <a className={styles.headerLink}>Work</a>
+            <a className={styles.link}>Work</a>
           </Link>
         </div>
       </div>

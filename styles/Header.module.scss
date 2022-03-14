@@ -1,0 +1,18 @@
+.header {
+  padding-top: 32px;
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1160px;
+    margin: auto;
+  }
+
+  .links {
+    display: flex;
+  }
+
+  .link {
+    margin: 0 16px;
+  }
+}
