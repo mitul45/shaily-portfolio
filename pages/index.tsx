@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Image from "next/image";
+import Link from "next/link";
 import cx from "classnames";
 
 import Header from "../components/Header";
@@ -79,21 +80,25 @@ const Home: NextPage = () => (
             image={NutriScanImage}
             title="NutriScan"
             desc="Helping users choose healthier food products"
+            link="/projects/nutriscan"
           />
           <Project
             image={PeeledOrangeImage}
             title="Peeled Orange"
             desc="An online magazine for busy intellactuals"
+            link="/projects/peeled-orange"
           />
           <Project
             image={GoogleKeepImage}
             title="Google Keep"
             desc="Adding a new feature for travel enthusiastics to plan better"
+            link="/projects/google-keep"
           />
           <Project
             image={MarmitasImage}
             title="Marmitas Da Horta"
             desc="Designing an e-commerce website for a vegan meal service"
+            link="/projects/marmitas"
           />
         </div>
       </div>
@@ -106,14 +111,15 @@ const Project = (props: {
   image: StaticImageData;
   title: string;
   desc: string;
+  link: string;
 }) => (
-  <>
-    <div className={styles.project}>
+  <Link href={props.link}>
+    <a className={styles.project}>
       <Image src={props.image} alt="Profile photo" />
       <h2 className="center">{props.title}</h2>
       <p className="center">{props.desc}</p>
-    </div>
-  </>
+    </a>
+  </Link>
 );
 
 export default Home;

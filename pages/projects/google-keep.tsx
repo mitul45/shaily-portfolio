@@ -2,6 +2,9 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
+
 import HeroImage from "../../public/google-keep/hero.jpeg";
 import AboutImage from "../../public/google-keep/about.jpeg";
 import OpportunityImage from "../../public/google-keep/opportunity.jpeg";
@@ -32,6 +35,7 @@ const GoogleKeep: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <Header />
       <main>
         <div className="container mx-auto my-32 max-w-container">
           <h1 className="text-3xl my-4">Case study: Google Keep</h1>
@@ -379,6 +383,7 @@ const GoogleKeep: NextPage = () => {
           </p>
         </div>
       </main>
+      <Footer />
     </>
   );
 };
