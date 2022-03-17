@@ -1,3 +1,8 @@
+.container {
+  max-width: 960px;
+  margin: auto;
+}
+
 .hero {
   display: flex;
   justify-content: space-between;
@@ -37,7 +42,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 32px;
-  margin-bottom: 84px;
 
   a:hover {
     text-decoration: none;

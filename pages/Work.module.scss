@@ -1,0 +1,43 @@
+.container {
+  max-width: 960px;
+}
+
+.title {
+  margin: 96px;
+}
+
+.project {
+  display: flex;
+  justify-content: space-between;
+  margin: 96px auto;
+  padding: 48px 0;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  .projectImage {
+    width: 47.5%;
+  }
+
+  .projectText {
+    width: 47.5%;
+
+    .projectTitle {
+      font-size: 45px;
+      font-weight: 400;
+      margin-bottom: 15px;
+    }
+
+    .projectSubtitle {
+      font-size: 27px;
+      font-weight: 300;
+      margin: 15px 0;
+    }
+
+    .projectDesc {
+      font-size: 20px;
+      font-weight: 300;
+    }
+  }
+}

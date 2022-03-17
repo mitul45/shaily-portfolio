@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import styles from "../styles/Home.module.scss";
+import styles from "./Index.module.scss";
 import Image from "next/image";
 import Link from "next/link";
 import cx from "classnames";
@@ -23,7 +23,7 @@ const Home: NextPage = () => (
 
     <Header />
     <main>
-      <div className={cx(styles.hero, "container")}>
+      <div className={cx(styles.hero, styles.container)}>
         <div className={styles.profile}>
           <Image src={ProfileImage} alt="Profile photo" />
         </div>
@@ -73,7 +73,7 @@ const Home: NextPage = () => (
           </div>
         </div>
       </div>
-      <div className="container">
+      <div className={styles.container}>
         <h1 className={styles.work}>Work</h1>
         <div className={styles.projects}>
           <Project
