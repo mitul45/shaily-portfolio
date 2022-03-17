@@ -16,6 +16,9 @@ a {
 
 a:hover {
   text-decoration: underline;
+  text-decoration-color: #ff7563;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
 }
 
 p {
