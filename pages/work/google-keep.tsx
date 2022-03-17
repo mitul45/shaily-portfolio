@@ -25,7 +25,6 @@ const GoogleKeep: NextPage = () => {
     <>
       <Head>
         <title>Case study: Google Keep – Shaily Gandhi</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Header />

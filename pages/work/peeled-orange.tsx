@@ -22,7 +22,6 @@ const GoogleKeep: NextPage = () => {
     <>
       <Head>
         <title>Case study: Peeled Orange – Shaily Gandhi</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Header />

@@ -17,7 +17,6 @@ const Work: NextPage = () => (
   <>
     <Head>
       <title>Work – Shaily Gandhi</title>
-      <link rel="icon" href="/favicon.ico" />
     </Head>
 
     <Header />
