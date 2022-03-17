@@ -41,7 +41,7 @@
 .projects {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 32px;
+  gap: 64px 32px;
 
   a:hover {
     text-decoration: none;
@@ -53,5 +53,15 @@
 
   img:hover {
     transform: scale(1.05);
+  }
+
+  .project {
+    h2 {
+      margin-bottom: 0;
+      font-weight: 400;
+    }
+    p {
+      margin-top: 0;
+    }
   }
 }

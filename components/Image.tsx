@@ -2,13 +2,18 @@ import Image from "next/image";
 import cx from "classnames";
 import styles from "./Image.module.scss";
 
-const ImageWithP = (props: { src: StaticImageData; alt?: string }) => {
+const CustomImage = (props: {
+  src: StaticImageData;
+  alt?: string;
+  showAlt?: boolean;
+}) => {
+  const { src, alt, showAlt = true } = props;
   return (
-    <p>
-      <Image src={props.src} alt={props.alt} />
-      <div className={cx("center", styles.alt)}>{props.alt}</div>
-    </p>
+    <>
+      <Image src={src} alt={alt} />
+      {showAlt && <div className={cx("center", styles.alt)}>{props.alt}</div>}
+    </>
   );
 };
 
-export default ImageWithP;
+export default CustomImage;
