@@ -6,8 +6,15 @@ import styles from "./Work.module.scss";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Image from "../../components/Image";
+import YT from "../../components/YT";
 
 import HeroImage from "../../public/home/Marmitas.jpg";
+import ClientImage from "../../public/marmitas/1-client.jpg";
+import PersonaImage from "../../public/marmitas/2-user-persona.jpg";
+import UserFlowImage from "../../public/marmitas/3-user-flow.jpg";
+import SitemapImage from "../../public/marmitas/4-sitemap.jpg";
+import LofiImage from "../../public/marmitas/5-Lo-fi-sketches.jpg";
+import MidFiImage from "../../public/marmitas/6-mid-fi-screens.jpg";
 
 const Marmitas: NextPage = () => {
   return (
@@ -96,6 +103,31 @@ const Marmitas: NextPage = () => {
                   </p>
                 </div>
               </div>
+            </section>
+            <section className={styles.process}>
+              <h3 className="center">Process</h3>
+              <div className={styles.image}>
+                <Image src={ClientImage} alt="Client details" />
+              </div>
+              <div className={styles.image}>
+                <Image src={PersonaImage} alt="User Persona" />
+              </div>
+              <div className={styles.image}>
+                <Image src={UserFlowImage} alt="User flow" />
+              </div>
+              <div className={styles.image}>
+                <Image src={SitemapImage} alt="Sitemap" />
+              </div>
+              <div className={styles.image}>
+                <Image src={LofiImage} alt="Lo-fi sketches" />
+              </div>
+              <div className={styles.image}>
+                <Image src={MidFiImage} alt="Mid-fi screens" />
+              </div>
+            </section>
+            <section className={styles.hifi}>
+              <h3 className="center">Hi Fi Prototype</h3>
+              <YT videoId="Mqk-eDK0mK4" alt="Hi-fi prototype" />
             </section>
           </div>
         </article>

@@ -11,7 +11,7 @@ const CustomImage = (props: {
   return (
     <>
       <Image src={src} alt={alt} />
-      {showAlt && <div className={cx("center", styles.alt)}>{props.alt}</div>}
+      {showAlt && <div className={cx("center", styles.alt)}>{alt}</div>}
     </>
   );
 };

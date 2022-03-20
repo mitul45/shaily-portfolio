@@ -6,20 +6,17 @@ import styles from "./Work.module.scss";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Image from "../../components/Image";
+import YT from "../../components/YT";
 
 import HeroImage from "../../public/home/Google keep.jpg";
-import AboutImage from "../../public/google-keep/What is Google Keep.jpg";
-import OpportunityImage from "../../public/google-keep/Opportunity.jpg";
-import FeatureComparisonImage from "../../public/google-keep/Feature Comparison.jpg";
-import UserInterviewsImage from "../../public/google-keep/Interviews quotes.jpg";
-import TravelTylerImage from "../../public/google-keep/User persona.jpg";
-import PlanningTripImage from "../../public/google-keep/New feature.jpg";
-import HappyPathImage from "../../public/google-keep/Happy path.jpg";
-import LoFiImage from "../../public/google-keep/Lo-fi sketches.jpg";
-import DesignSystemImage from "../../public/google-keep/Design guidelines.jpg";
-import AtomicStructureImage from "../../public/google-keep/Atomic structure.jpg";
-import ComponentsImage from "../../public/google-keep/Components & Variants.jpg";
-import EvolutionImage from "../../public/google-keep/Evolution of a screen.jpg";
+import PersonaImage from "../../public/google-keep/1-user-persona.jpg";
+import NewFeatureImage from "../../public/google-keep/2-new-feature.jpg";
+import HappyPathImage from "../../public/google-keep/3-happy-path.jpg";
+import LofiImage from "../../public/google-keep/4-lo-fi-sketches.jpg";
+import EvoluationImage from "../../public/google-keep/5-evolution-of-a-screen.jpg";
+import DesignGuidelinesImage from "../../public/google-keep/6-design-guidelines.jpg";
+import AtomicStructureImage from "../../public/google-keep/7-atomic-structure.jpg";
+import ComponentsImage from "../../public/google-keep/8-components-and-variants.jpg";
 
 const GoogleKeep: NextPage = () => {
   return (
@@ -108,6 +105,40 @@ const GoogleKeep: NextPage = () => {
                   </p>
                 </div>
               </div>
+            </section>
+            <section className={styles.process}>
+              <h3 className="center">Process</h3>
+              <div className={styles.image}>
+                <Image src={PersonaImage} alt="User Persona" />
+              </div>
+              <div className={styles.image}>
+                <Image src={NewFeatureImage} alt="Proposed new feature" />
+              </div>
+              <div className={styles.image}>
+                <Image src={HappyPathImage} alt="Happy path" />
+              </div>
+              <div className={styles.image}>
+                <Image src={LofiImage} alt="Lo-fi sketches" />
+              </div>
+              <div className={styles.image}>
+                <Image src={EvoluationImage} alt="Evoluation of a screen" />
+              </div>
+              <div className={styles.image}>
+                <Image src={DesignGuidelinesImage} alt="Design guidelines" />
+              </div>
+              <div className={styles.image}>
+                <Image src={AtomicStructureImage} alt="Atomic structure" />
+              </div>
+              <div className={styles.image}>
+                <Image src={ComponentsImage} alt="Components and variants" />
+              </div>
+            </section>
+            <section className={styles.hifi}>
+              <h3 className="center">Hi Fi Prototype</h3>
+              <YT
+                videoId="Mqk-eDK0mK4"
+                alt="Hi-fi prototype"
+              />
             </section>
           </div>
         </article>

@@ -6,17 +6,15 @@ import styles from "./Work.module.scss";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Image from "../../components/Image";
+import YT from "../../components/YT";
 
 import HeroImage from "../../public/home/Peeled orange.jpg";
-import UserPersonaImage from "../../public/peeled-orange/User Persona.jpg";
-import HowMightWeImage from "../../public/peeled-orange/HMW.jpg";
-import ContentImage from "../../public/peeled-orange/Content.jpg";
-import StructureImage from "../../public/peeled-orange/Structure.jpg";
-import SiteMapImage from "../../public/peeled-orange/Sitemap.jpg";
-import UserFlowImage from "../../public/peeled-orange/User-flow.jpg";
-import LoFiImage from "../../public/peeled-orange/Lo-fi sketches.jpg";
-import MidFiImage from "../../public/peeled-orange/Mid-fi wireframes.jpg";
-import BrandAttributesImage from "../../public/peeled-orange/Final Brand Attributes.jpg";
+import MidFiImage from "../../public/peeled-orange/2-mid-fi-wireframes.jpg";
+import SiteMapImage from "../../public/peeled-orange/3-sitemap.jpg";
+import MoodboardImage from "../../public/peeled-orange/4-moodboard.jpg";
+import StyleGuideImage from "../../public/peeled-orange/5-style-guide.jpg";
+import Mockup1Image from "../../public/peeled-orange/6-mockup-1.jpg";
+import Mockup2Image from "../../public/peeled-orange/7-mockup-2.jpg";
 
 const GoogleKeep: NextPage = () => {
   return (
@@ -107,6 +105,36 @@ const GoogleKeep: NextPage = () => {
                   </p>
                 </div>
               </div>
+            </section>
+            <section className={styles.process}>
+              <h3 className="center">Process</h3>
+              <div className={styles.image}>
+                <Image src={MidFiImage} alt="Mi fi Screens" />
+              </div>
+              <div className={styles.image}>
+                <Image src={SiteMapImage} alt="Site map" />
+              </div>
+              <div className={styles.image}>
+                <Image src={MoodboardImage} alt="Moodboard" />
+              </div>
+              <div className={styles.image}>
+                <Image src={StyleGuideImage} alt="Style tile" />
+              </div>
+              <div className={styles.image}>
+                <Image src={Mockup1Image} alt="Mockup – Laptop" />
+              </div>
+              <div className={styles.image}>
+                <Image src={Mockup2Image} alt="Mockup – Tablet + Phone" />
+              </div>
+            </section>
+            <section className={styles.hifi}>
+              <h3 className="center">Hi Fi Prototype</h3>
+              <YT
+                videoId="z7GsFbZs5qk"
+                alt="Hi-fi prototype: Peeled orange magazine"
+              />
+              <YT videoId="aieJuY8Hr6Q" alt="Tablet version in action" />
+              <YT videoId="PTjQNpcNO4M" alt="Mobile version in action" />
             </section>
           </div>
         </article>

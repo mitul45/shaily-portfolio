@@ -6,8 +6,14 @@ import styles from "./Work.module.scss";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Image from "../../components/Image";
+import YT from "../../components/YT";
 
 import HeroImage from "../../public/home/NutriScan.jpg";
+import MidFiImage from "../../public/nutriscan/1-mid-fi.jpg";
+import MoodboardImage from "../../public/nutriscan/2-moodboard.jpg";
+import StyleGuideImage from "../../public/nutriscan/3-style-guide.jpg";
+import ProductScreenImage from "../../public/nutriscan/4-product-screen.jpg";
+import CommunityPageImage from "../../public/nutriscan/5-community-page.jpg";
 
 const NutriScan: NextPage = () => {
   return (
@@ -27,11 +33,7 @@ const NutriScan: NextPage = () => {
           </section>
           <section className={cx(styles.hero, styles.nutriscan)}>
             <div className={styles.image}>
-              <Image
-                src={HeroImage}
-                alt="NutriScan"
-                showAlt={false}
-              />
+              <Image src={HeroImage} alt="NutriScan" showAlt={false} />
             </div>
           </section>
           <div className="container">
@@ -110,6 +112,34 @@ const NutriScan: NextPage = () => {
                   </p>
                 </div>
               </div>
+            </section>
+            <section className={styles.process}>
+              <h3 className="center">Process</h3>
+              <div className={styles.image}>
+                <Image src={MidFiImage} alt="Mi fi Screens" />
+              </div>
+              <div className={styles.image}>
+                <Image src={MoodboardImage} alt="Moodboard" />
+              </div>
+              <div className={styles.image}>
+                <Image src={StyleGuideImage} alt="Style tile" />
+              </div>
+              <div className={styles.image}>
+                <Image
+                  src={ProductScreenImage}
+                  alt="Product screen evolution"
+                />
+              </div>
+              <div className={styles.image}>
+                <Image
+                  src={CommunityPageImage}
+                  alt="Community screen evolution"
+                />
+              </div>
+            </section>
+            <section className={styles.hifi}>
+              <h3 className="center">Hi Fi Prototype</h3>
+              <YT videoId="U6FjW3n4bDY" alt="Hi-fi prototype" />
             </section>
           </div>
         </article>
