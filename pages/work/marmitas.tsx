@@ -127,7 +127,7 @@ const Marmitas: NextPage = () => {
             </section>
             <section className={styles.hifi}>
               <h3 className="center">Hi Fi Prototype</h3>
-              <YT videoId="Mqk-eDK0mK4" alt="Hi-fi prototype" />
+              <YT videoId="fFhTGo23rCw" alt="Hi-fi prototype" />
             </section>
           </div>
         </article>
