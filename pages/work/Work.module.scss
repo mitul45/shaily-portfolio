@@ -1,3 +1,8 @@
+.container {
+  max-width: 760px;
+  margin: auto;
+}
+
 .hero {
   &__image {
     margin-left: calc((100vw - 760px) / 2);

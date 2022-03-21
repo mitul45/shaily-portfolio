@@ -25,7 +25,7 @@ const NutriScan: NextPage = () => {
       <Header />
       <main>
         <article>
-          <section className={cx(styles.hero, "container")}>
+          <section className={cx(styles.hero, styles.container)}>
             <h1 className={styles["hero__title"]}>NutriScan</h1>
             <h2 className={styles["hero__subtitle"]}>
               Helping users choose healthier food products
@@ -36,7 +36,7 @@ const NutriScan: NextPage = () => {
               <Image src={HeroImage} alt="NutriScan" showAlt={false} />
             </div>
           </section>
-          <div className="container">
+          <div className={styles.container}>
             <section className={styles["section--meta"]}>
               <div>
                 <h3>Client:</h3>

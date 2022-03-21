@@ -1,7 +1,7 @@
 .header {
   padding-top: 32px;
 
-  .content {
+  &__content {
     display: flex;
     justify-content: space-between;
     max-width: 1160px;
@@ -9,11 +9,18 @@
     font-size: 18px;
   }
 
-  .links {
+  &__links {
     display: flex;
   }
 
-  .link {
+  &__link {
     margin: 0 16px;
+
+    &:hover {
+      text-decoration: underline;
+      text-decoration-color: #ff7563;
+      text-decoration-thickness: 3px;
+      text-underline-offset: 10px;
+    }
   }
 }

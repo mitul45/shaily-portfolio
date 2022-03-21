@@ -1,19 +1,19 @@
 import styles from "./Footer.module.scss";
 
-const Header = () => (
+const Footer = () => (
   <footer className={styles.footer}>
-    <div className={styles.content}>
+    <div className={styles["footer__content"]}>
       <section>
-        <div className={styles.title}>Contat details</div>
-        <a className={styles.item} href="mailto:shailymgandhi@gmail.com">
+        <div className={styles["footer__title"]}>Contact details</div>
+        <a className={styles["footer__item"]} href="mailto:shailymgandhi@gmail.com">
           shailymgandhi@gmail.com
         </a>
-        <div className={styles.item}>Amsterdam, NL</div>
+        <div className={styles["footer__item"]}>Amsterdam, NL</div>
       </section>
       <section>
-        <div className={styles.title}>Follow</div>
+        <div className={styles["footer__title"]}>Follow</div>
         <a
-          className={styles.item}
+          className={styles["footer__item"]}
           href="https://www.linkedin.com/in/shaily-gandhi/"
           target="_blank"
           rel="noopener noreferrer"
@@ -21,7 +21,7 @@ const Header = () => (
           LinkedIn
         </a>
         <a
-          className={styles.item}
+          className={styles["footer__item"]}
           href="https://medium.com/@shailymgandhi"
           target="_blank"
           rel="noopener noreferrer"
@@ -33,4 +33,4 @@ const Header = () => (
   </footer>
 );
 
-export default Header;
+export default Footer;

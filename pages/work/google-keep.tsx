@@ -28,7 +28,7 @@ const GoogleKeep: NextPage = () => {
       <Header />
       <main>
         <article>
-          <section className={cx(styles.hero, "container")}>
+          <section className={cx(styles.hero, styles.container)}>
             <h1 className={styles["hero__title"]}>Google Keep</h1>
             <h2 className={styles["hero__subtitle"]}>
               Adding a new feature for travel enthusiastics to plan better
@@ -43,7 +43,7 @@ const GoogleKeep: NextPage = () => {
               />
             </div>
           </section>
-          <div className="container">
+          <div className={styles.container}>
             <section className={styles["section--meta"]}>
               <div>
                 <h3>Client:</h3>
