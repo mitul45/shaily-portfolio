@@ -7,6 +7,7 @@ import cx from "classnames";
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import ButtonLink from "../components/Link";
 
 import ProfileImage from "../public/home/profile.jpg";
 import GoogleKeepImage from "../public/home/Google keep.jpg";
@@ -43,32 +44,7 @@ const Home: NextPage = () => (
             <p>Explore. Build. Contribute.</p>
           </div>
           <div>
-            <a
-              className={styles.linkedin}
-              href="https://www.linkedin.com/in/shaily-gandhi/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                src="/LinkedIn.svg"
-                alt="LinkedIn Logo"
-                width={32}
-                height={32}
-              />
-            </a>
-            <a
-              className={styles.item}
-              href="https://medium.com/@shailymgandhi"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                src="/Medium.svg"
-                alt="Medium Logo"
-                width={32}
-                height={32}
-              />
-            </a>
+            <ButtonLink href="/Resume.pdf" title="See my resume" />
           </div>
         </div>
       </div>

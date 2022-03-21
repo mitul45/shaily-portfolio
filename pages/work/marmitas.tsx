@@ -7,6 +7,7 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Image from "../../components/Image";
 import YT from "../../components/YT";
+import Link from "../../components/Link";
 
 import HeroImage from "../../public/home/Marmitas.jpg";
 import ClientImage from "../../public/marmitas/1-client.jpg";
@@ -134,13 +135,10 @@ const Marmitas: NextPage = () => {
             <section
               className={cx(styles.section, styles["section--read-more"])}
             >
-              <a
-                href="https://bootcamp.uxdesign.cc/designing-an-e-commerce-website-for-a-vegan-meal-service-2d3a1c378376"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Read full case study
-              </a>
+              <Link
+                href="//bootcamp.uxdesign.cc/designing-an-e-commerce-website-for-a-vegan-meal-service-2d3a1c378376"
+                title="Read full case study"
+              />
             </section>
           </div>
         </article>

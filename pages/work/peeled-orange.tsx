@@ -7,6 +7,7 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Image from "../../components/Image";
 import YT from "../../components/YT";
+import Link from "../../components/Link";
 
 import HeroImage from "../../public/home/Peeled orange.jpg";
 import MidFiImage from "../../public/peeled-orange/2-mid-fi-wireframes.jpg";
@@ -141,13 +142,10 @@ const GoogleKeep: NextPage = () => {
             <section
               className={cx(styles.section, styles["section--read-more"])}
             >
-              <a
+              <Link
                 href="https://bootcamp.uxdesign.cc/helping-busy-intellectuals-indulge-more-in-self-care-and-explore-new-passions-2abee2419d7"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Read full case study
-              </a>
+                title="Read full case study"
+              />
             </section>
           </div>
         </article>

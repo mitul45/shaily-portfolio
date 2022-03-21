@@ -7,6 +7,7 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Image from "../../components/Image";
 import YT from "../../components/YT";
+import Link from "../../components/Link";
 
 import HeroImage from "../../public/home/NutriScan.jpg";
 import MidFiImage from "../../public/nutriscan/1-mid-fi.jpg";
@@ -146,13 +147,10 @@ const NutriScan: NextPage = () => {
             <section
               className={cx(styles.section, styles["section--read-more"])}
             >
-              <a
+              <Link
                 href="https://bootcamp.uxdesign.cc/changing-the-way-you-buy-your-food-products-1d655811d2ed"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Read full case study
-              </a>
+                title="Read full case study"
+              />
             </section>
           </div>
         </article>

@@ -7,6 +7,7 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Image from "../../components/Image";
 import YT from "../../components/YT";
+import Link from "../../components/Link";
 
 import HeroImage from "../../public/home/Google keep.jpg";
 import PersonaImage from "../../public/google-keep/1-user-persona.jpg";
@@ -142,13 +143,10 @@ const GoogleKeep: NextPage = () => {
             <section
               className={cx(styles.section, styles["section--read-more"])}
             >
-              <a
+              <Link
                 href="https://bootcamp.uxdesign.cc/google-keep-ui-case-study-c975126e1555"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Read full case study
-              </a>
+                title="Read full case study"
+              />
             </section>
           </div>
         </article>
