@@ -143,6 +143,17 @@ const NutriScan: NextPage = () => {
                 <YT videoId="U6FjW3n4bDY" alt="Hi-fi prototype" />
               </div>
             </section>
+            <section
+              className={cx(styles.section, styles["section--read-more"])}
+            >
+              <a
+                href="https://bootcamp.uxdesign.cc/changing-the-way-you-buy-your-food-products-1d655811d2ed"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Read full case study
+              </a>
+            </section>
           </div>
         </article>
       </main>

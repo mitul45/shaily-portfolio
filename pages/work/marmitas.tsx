@@ -134,7 +134,13 @@ const Marmitas: NextPage = () => {
             <section
               className={cx(styles.section, styles["section--read-more"])}
             >
-              <button>Read full case study</button>
+              <a
+                href="https://bootcamp.uxdesign.cc/designing-an-e-commerce-website-for-a-vegan-meal-service-2d3a1c378376"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Read full case study
+              </a>
             </section>
           </div>
         </article>

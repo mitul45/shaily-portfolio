@@ -138,6 +138,17 @@ const GoogleKeep: NextPage = () => {
                 <YT videoId="PTjQNpcNO4M" alt="Mobile version in action" />
               </div>
             </section>
+            <section
+              className={cx(styles.section, styles["section--read-more"])}
+            >
+              <a
+                href="https://bootcamp.uxdesign.cc/helping-busy-intellectuals-indulge-more-in-self-care-and-explore-new-passions-2abee2419d7"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Read full case study
+              </a>
+            </section>
           </div>
         </article>
       </main>

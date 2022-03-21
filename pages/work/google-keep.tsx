@@ -139,6 +139,17 @@ const GoogleKeep: NextPage = () => {
                 <YT videoId="Mqk-eDK0mK4" alt="Hi-fi prototype" />
               </div>
             </section>
+            <section
+              className={cx(styles.section, styles["section--read-more"])}
+            >
+              <a
+                href="https://bootcamp.uxdesign.cc/google-keep-ui-case-study-c975126e1555"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Read full case study
+              </a>
+            </section>
           </div>
         </article>
       </main>
