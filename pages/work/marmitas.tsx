@@ -26,19 +26,19 @@ const Marmitas: NextPage = () => {
       <Header />
       <main>
         <article>
-          <section className="container">
-            <h1 className={styles.title}>Marmitas Da Horta</h1>
-            <h2 className={styles.subtitle}>
+          <section className={cx(styles.hero, "container")}>
+            <h1 className={styles["hero__title"]}>Marmitas Da Horta</h1>
+            <h2 className={styles["hero__subtitle"]}>
               Designing an e-commerce website for a vegan meal service
             </h2>
           </section>
-          <section className={cx(styles.hero, styles.marmitas)}>
-            <div className={styles.image}>
+          <section className={styles["hero--marmitas"]}>
+            <div className={styles["hero__image"]}>
               <Image src={HeroImage} alt="Marmitas Da Horta" showAlt={false} />
             </div>
           </section>
           <div className="container">
-            <section className={styles.meta}>
+            <section className={styles["section--meta"]}>
               <div>
                 <h3>Client:</h3>
                 <p>Academic project</p>
@@ -67,9 +67,9 @@ const Marmitas: NextPage = () => {
                 <p>UX researcher, Interactions Designer</p>
               </div>
             </section>
-            <section className={styles.overview}>
-              <h3 className="center">Project Overview</h3>
-              <div className={styles.overviewGrid}>
+            <section className={styles.section}>
+              <h3 className={styles["section__title"]}>Project Overview</h3>
+              <div className={styles["section--overview-grid"]}>
                 <h4>Context:</h4>
                 <div>
                   <p>
@@ -104,30 +104,37 @@ const Marmitas: NextPage = () => {
                 </div>
               </div>
             </section>
-            <section className={styles.process}>
-              <h3 className="center">Process</h3>
-              <div className={styles.image}>
+            <section className={styles.section}>
+              <h3 className={styles["section__title"]}>Process</h3>
+              <div className={styles["section__item"]}>
                 <Image src={ClientImage} alt="Client details" />
               </div>
-              <div className={styles.image}>
+              <div className={styles["section__item"]}>
                 <Image src={PersonaImage} alt="User Persona" />
               </div>
-              <div className={styles.image}>
+              <div className={styles["section__item"]}>
                 <Image src={UserFlowImage} alt="User flow" />
               </div>
-              <div className={styles.image}>
+              <div className={styles["section__item"]}>
                 <Image src={SitemapImage} alt="Sitemap" />
               </div>
-              <div className={styles.image}>
+              <div className={styles["section__item"]}>
                 <Image src={LofiImage} alt="Lo-fi sketches" />
               </div>
-              <div className={styles.image}>
+              <div className={styles["section__item"]}>
                 <Image src={MidFiImage} alt="Mid-fi screens" />
               </div>
             </section>
-            <section className={styles.hifi}>
-              <h3 className="center">Hi Fi Prototype</h3>
-              <YT videoId="fFhTGo23rCw" alt="Hi-fi prototype" />
+            <section className={styles.section}>
+              <h3 className={styles["section__title"]}>Hi Fi Prototype</h3>
+              <div className={styles["section__item"]}>
+                <YT videoId="fFhTGo23rCw" alt="Hi-fi prototype" />
+              </div>
+            </section>
+            <section
+              className={cx(styles.section, styles["section--read-more"])}
+            >
+              <button>Read full case study</button>
             </section>
           </div>
         </article>

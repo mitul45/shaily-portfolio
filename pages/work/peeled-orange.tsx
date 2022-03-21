@@ -26,23 +26,19 @@ const GoogleKeep: NextPage = () => {
       <Header />
       <main>
         <article>
-          <section className="container">
-            <h1 className={styles.title}>Peeled Orange</h1>
-            <h2 className={styles.subtitle}>
+          <section className={cx(styles.hero, "container")}>
+            <h1 className={styles["hero__title"]}>Peeled Orange</h1>
+            <h2 className={styles["hero__subtitle"]}>
               An online magazine for busy intellactuals
             </h2>
           </section>
-          <section className={cx(styles.hero, styles.peeledOrange)}>
-            <div className={styles.image}>
-              <Image
-                src={HeroImage}
-                alt="Peeled Orange: An online magazine for busy intellactuals"
-                showAlt={false}
-              />
+          <section className={styles["hero--peeled-orange"]}>
+            <div className={styles["hero__image"]}>
+              <Image src={HeroImage} alt="Peeled Orange" showAlt={false} />
             </div>
           </section>
           <div className="container">
-            <section className={styles.meta}>
+            <section className={styles["section--meta"]}>
               <div>
                 <h3>Client:</h3>
                 <p>Academic project</p>
@@ -72,9 +68,9 @@ const GoogleKeep: NextPage = () => {
                 <p>UX researcher, Interactions Designer & UI Designer</p>
               </div>
             </section>
-            <section className={styles.overview}>
-              <h3 className="center">Project Overview</h3>
-              <div className={styles.overviewGrid}>
+            <section className={styles.section}>
+              <h3 className={styles["section__title"]}>Project Overview</h3>
+              <div className={styles["section--overview-grid"]}>
                 <h4>Context:</h4>
                 <div>
                   <p>
@@ -106,35 +102,41 @@ const GoogleKeep: NextPage = () => {
                 </div>
               </div>
             </section>
-            <section className={styles.process}>
-              <h3 className="center">Process</h3>
-              <div className={styles.image}>
+            <section className={styles.section}>
+              <h3 className={styles["section__title"]}>Process</h3>
+              <div className={styles["section__item"]}>
                 <Image src={MidFiImage} alt="Mi fi Screens" />
               </div>
-              <div className={styles.image}>
+              <div className={styles["section__item"]}>
                 <Image src={SiteMapImage} alt="Site map" />
               </div>
-              <div className={styles.image}>
+              <div className={styles["section__item"]}>
                 <Image src={MoodboardImage} alt="Moodboard" />
               </div>
-              <div className={styles.image}>
+              <div className={styles["section__item"]}>
                 <Image src={StyleGuideImage} alt="Style tile" />
               </div>
-              <div className={styles.image}>
+              <div className={styles["section__item"]}>
                 <Image src={Mockup1Image} alt="Mockup – Laptop" />
               </div>
-              <div className={styles.image}>
+              <div className={styles["section__item"]}>
                 <Image src={Mockup2Image} alt="Mockup – Tablet + Phone" />
               </div>
             </section>
-            <section className={styles.hifi}>
-              <h3 className="center">Hi Fi Prototype</h3>
-              <YT
-                videoId="z7GsFbZs5qk"
-                alt="Hi-fi prototype: Peeled orange magazine"
-              />
-              <YT videoId="aieJuY8Hr6Q" alt="Tablet version in action" />
-              <YT videoId="PTjQNpcNO4M" alt="Mobile version in action" />
+            <section className={styles.section}>
+              <h3 className={styles["section__title"]}>Hi Fi Prototype</h3>
+              <div className={styles["section__item"]}>
+                <YT
+                  videoId="z7GsFbZs5qk"
+                  alt="Hi-fi prototype: Peeled orange magazine"
+                />
+              </div>
+              <div className={styles["section__item"]}>
+                <YT videoId="aieJuY8Hr6Q" alt="Tablet version in action" />
+              </div>
+              <div className={styles["section__item"]}>
+                <YT videoId="PTjQNpcNO4M" alt="Mobile version in action" />
+              </div>
             </section>
           </div>
         </article>

@@ -25,19 +25,19 @@ const NutriScan: NextPage = () => {
       <Header />
       <main>
         <article>
-          <section className="container">
-            <h1 className={styles.title}>NutriScan</h1>
-            <h2 className={styles.subtitle}>
+          <section className={cx(styles.hero, "container")}>
+            <h1 className={styles["hero__title"]}>NutriScan</h1>
+            <h2 className={styles["hero__subtitle"]}>
               Helping users choose healthier food products
             </h2>
           </section>
-          <section className={cx(styles.hero, styles.nutriscan)}>
-            <div className={styles.image}>
+          <section className={styles["hero--nutriscan"]}>
+            <div className={styles["hero__image"]}>
               <Image src={HeroImage} alt="NutriScan" showAlt={false} />
             </div>
           </section>
           <div className="container">
-            <section className={styles.meta}>
+            <section className={styles["section--meta"]}>
               <div>
                 <h3>Client:</h3>
                 <p>Academic project</p>
@@ -75,9 +75,9 @@ const NutriScan: NextPage = () => {
                 <p>UX researcher, Interactions Designer & UI Designer</p>
               </div>
             </section>
-            <section className={styles.overview}>
-              <h3 className="center">Project Overview</h3>
-              <div className={styles.overviewGrid}>
+            <section className={styles.section}>
+              <h3 className={styles["section__title"]}>Project Overview</h3>
+              <div className={styles["section--overview-grid"]}>
                 <h4>Context:</h4>
                 <div>
                   <p>
@@ -113,33 +113,35 @@ const NutriScan: NextPage = () => {
                 </div>
               </div>
             </section>
-            <section className={styles.process}>
-              <h3 className="center">Process</h3>
-              <div className={styles.image}>
+            <section className={styles.section}>
+              <h3 className={styles["section__title"]}>Process</h3>
+              <div className={styles["section__item"]}>
                 <Image src={MidFiImage} alt="Mi fi Screens" />
               </div>
-              <div className={styles.image}>
+              <div className={styles["section__item"]}>
                 <Image src={MoodboardImage} alt="Moodboard" />
               </div>
-              <div className={styles.image}>
+              <div className={styles["section__item"]}>
                 <Image src={StyleGuideImage} alt="Style tile" />
               </div>
-              <div className={styles.image}>
+              <div className={styles["section__item"]}>
                 <Image
                   src={ProductScreenImage}
                   alt="Product screen evolution"
                 />
               </div>
-              <div className={styles.image}>
+              <div className={styles["section__item"]}>
                 <Image
                   src={CommunityPageImage}
                   alt="Community screen evolution"
                 />
               </div>
             </section>
-            <section className={styles.hifi}>
-              <h3 className="center">Hi Fi Prototype</h3>
-              <YT videoId="U6FjW3n4bDY" alt="Hi-fi prototype" />
+            <section className={styles.section}>
+              <h3 className={styles["section__title"]}>Hi Fi Prototype</h3>
+              <div className={styles["section__item"]}>
+                <YT videoId="U6FjW3n4bDY" alt="Hi-fi prototype" />
+              </div>
             </section>
           </div>
         </article>

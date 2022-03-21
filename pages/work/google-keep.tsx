@@ -28,23 +28,23 @@ const GoogleKeep: NextPage = () => {
       <Header />
       <main>
         <article>
-          <div className="container">
-            <h1 className={styles.title}>Google Keep</h1>
-            <h2 className={styles.subtitle}>
+          <section className={cx(styles.hero, "container")}>
+            <h1 className={styles["hero__title"]}>Google Keep</h1>
+            <h2 className={styles["hero__subtitle"]}>
               Adding a new feature for travel enthusiastics to plan better
             </h2>
-          </div>
-          <div className={cx(styles.hero, styles.googleKeep)}>
-            <div className={styles.image}>
+          </section>
+          <section className={styles["hero--google-keep"]}>
+            <div className={styles["hero__image"]}>
               <Image
                 src={HeroImage}
                 alt="Google Keep: Travel Template"
                 showAlt={false}
               />
             </div>
-          </div>
+          </section>
           <div className="container">
-            <section className={styles.meta}>
+            <section className={styles["section--meta"]}>
               <div>
                 <h3>Client:</h3>
                 <p>Academic project</p>
@@ -74,9 +74,9 @@ const GoogleKeep: NextPage = () => {
                 <p>UX researcher, Interactions Designer & UI Designer</p>
               </div>
             </section>
-            <section className={styles.overview}>
-              <h3 className="center">Project Overview</h3>
-              <div className={styles.overviewGrid}>
+            <section className={styles.section}>
+              <h3 className={styles["section__title"]}>Project Overview</h3>
+              <div className={styles["section--overview-grid"]}>
                 <h4>Context:</h4>
                 <div>
                   <p>
@@ -106,39 +106,38 @@ const GoogleKeep: NextPage = () => {
                 </div>
               </div>
             </section>
-            <section className={styles.process}>
-              <h3 className="center">Process</h3>
-              <div className={styles.image}>
+            <section className={styles.section}>
+              <h3 className={styles["section__title"]}>Process</h3>
+              <div className={styles["section__item"]}>
                 <Image src={PersonaImage} alt="User Persona" />
               </div>
-              <div className={styles.image}>
+              <div className={styles["section__item"]}>
                 <Image src={NewFeatureImage} alt="Proposed new feature" />
               </div>
-              <div className={styles.image}>
+              <div className={styles["section__item"]}>
                 <Image src={HappyPathImage} alt="Happy path" />
               </div>
-              <div className={styles.image}>
+              <div className={styles["section__item"]}>
                 <Image src={LofiImage} alt="Lo-fi sketches" />
               </div>
-              <div className={styles.image}>
+              <div className={styles["section__item"]}>
                 <Image src={EvoluationImage} alt="Evoluation of a screen" />
               </div>
-              <div className={styles.image}>
+              <div className={styles["section__item"]}>
                 <Image src={DesignGuidelinesImage} alt="Design guidelines" />
               </div>
-              <div className={styles.image}>
+              <div className={styles["section__item"]}>
                 <Image src={AtomicStructureImage} alt="Atomic structure" />
               </div>
-              <div className={styles.image}>
+              <div className={styles["section__item"]}>
                 <Image src={ComponentsImage} alt="Components and variants" />
               </div>
             </section>
-            <section className={styles.hifi}>
-              <h3 className="center">Hi Fi Prototype</h3>
-              <YT
-                videoId="Mqk-eDK0mK4"
-                alt="Hi-fi prototype"
-              />
+            <section className={styles.section}>
+              <h3 className={styles["section__title"]}>Hi Fi Prototype</h3>
+              <div className={styles["section__item"]}>
+                <YT videoId="Mqk-eDK0mK4" alt="Hi-fi prototype" />
+              </div>
             </section>
           </div>
         </article>
