@@ -4,19 +4,21 @@
 
 .title {
   margin: 96px;
+  text-align: center;
 }
 
 .project {
   display: flex;
   justify-content: space-between;
   margin: 96px auto;
-  padding: 48px 0;
+  padding: 48px 16px;
 
-  &:hover {
-    text-decoration: none;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .projectImage {
+  &__image {
     width: 47.5%;
 
     img {
@@ -26,26 +28,46 @@
     img:hover {
       transform: scale(1.05);
     }
+
+    @media (max-width: 768px) {
+      width: 95%;
+    }
   }
 
-  .projectText {
+  &__content {
     width: 47.5%;
 
-    .projectTitle {
-      font-size: 45px;
-      font-weight: 400;
-      margin-bottom: 15px;
+    @media (max-width: 768px) {
+      width: 95%;
     }
+  }
 
-    .projectSubtitle {
-      font-size: 27px;
-      font-weight: 300;
-      margin: 15px 0;
+  &__title {
+    font-size: 45px;
+    font-weight: 400;
+    margin-bottom: 15px;
+
+    @media (max-width: 768px) {
+      font-size: 30px;
     }
+  }
 
-    .projectDesc {
+  &__subtitle {
+    font-size: 27px;
+    font-weight: 300;
+    margin: 15px 0;
+
+    @media (max-width: 768px) {
       font-size: 20px;
-      font-weight: 300;
+    }
+  }
+
+  &__desc {
+    font-size: 20px;
+    font-weight: 300;
+
+    @media (max-width: 768px) {
+      font-size: 16px;
     }
   }
 }

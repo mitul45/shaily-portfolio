@@ -21,7 +21,7 @@ const Work: NextPage = () => (
 
     <Header />
     <main>
-      <h1 className={cx(styles.title, "center")}>Selected Work</h1>
+      <h1 className={styles.title}>Selected Work</h1>
       <Project
         image={NutriScanImage}
         title="NutriScan"
@@ -70,13 +70,13 @@ const Project = (props: {
   <section style={{ background: props.backgroundColor }}>
     <Link href={props.link}>
       <a className={cx(styles.project, styles.container)}>
-        <div className={styles.projectImage}>
-          <Image src={props.image} alt="Profile photo" />
+        <div className={styles["project__image"]}>
+          <Image src={props.image} alt={props.title} />
         </div>
-        <div className={styles.projectText}>
-          <h2 className={styles.projectTitle}>{props.title}</h2>
-          <h3 className={styles.projectSubtitle}>{props.subtitle}</h3>
-          <p className={styles.projectDesc}>{props.desc}</p>
+        <div className={styles["project__content"]}>
+          <h2 className={styles["project__title"]}>{props.title}</h2>
+          <h3 className={styles["project__subtitle"]}>{props.subtitle}</h3>
+          <p className={styles["project__desc"]}>{props.desc}</p>
         </div>
       </a>
     </Link>

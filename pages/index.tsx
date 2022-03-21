@@ -23,15 +23,15 @@ const Home: NextPage = () => (
 
     <Header />
     <main>
-      <div className={cx(styles.hero, styles.container)}>
-        <div className={styles.profile}>
+      <section className={cx(styles.hero, styles.container)}>
+        <div className={styles["hero__profile"]}>
           <Image src={ProfileImage} alt="Profile photo" />
         </div>
-        <div className={styles.heroContent}>
+        <div className={styles["hero__content"]}>
           <div>
-            <h4 className={styles.heroSubTitle}>Hi, I am</h4>
-            <h1 className={styles.heroTitle}>Shaily</h1>
-            <h4 className={styles.heroSubTitle}>UX / UI Designer</h4>
+            <h4 className={styles["hero__subtitle"]}>Hi, I am</h4>
+            <h1 className={styles["hero__title"]}>Shaily</h1>
+            <h4 className={styles["hero__subtitle"]}>UX / UI Designer</h4>
             <p>
               Having my humble roots in Architecture, I am a curious designer
               who likes to focus on human centric experience while building just
@@ -47,9 +47,9 @@ const Home: NextPage = () => (
             <ButtonLink href="/Resume.pdf" title="See my resume" />
           </div>
         </div>
-      </div>
-      <div className={styles.container}>
-        <h1 className={styles.work}>Work</h1>
+      </section>
+      <section className={cx(styles.section, styles.container)}>
+        <h1 className={styles["section__title"]}>Work</h1>
         <div className={styles.projects}>
           <Project
             image={NutriScanImage}
@@ -76,7 +76,7 @@ const Home: NextPage = () => (
             link="/work/marmitas"
           />
         </div>
-      </div>
+      </section>
     </main>
     <Footer />
   </>
@@ -89,10 +89,10 @@ const Project = (props: {
   link: string;
 }) => (
   <Link href={props.link}>
-    <a className={styles.project}>
+    <a className={styles["projects__project"]}>
       <Image src={props.image} alt="Profile photo" />
-      <h2 className="center">{props.title}</h2>
-      <p className="center">{props.desc}</p>
+      <h2>{props.title}</h2>
+      <p>{props.desc}</p>
     </a>
   </Link>
 );

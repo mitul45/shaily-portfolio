@@ -1,18 +1,27 @@
 .container {
   max-width: 760px;
   margin: auto;
+  padding: 0 16px;
 }
 
 .hero {
   &__image {
     margin-left: calc((100vw - 760px) / 2);
     max-width: 500px;
+
+    @media (max-width: 768px) {
+      margin-left: 0;
+    }
   }
 
   &__title {
     font-size: 48px;
     margin-bottom: 16px;
     margin-top: 150px;
+
+    @media (max-width: 768px) {
+      font-size: 30px;
+    }
   }
 
   &__subtitle {
@@ -20,6 +29,10 @@
     font-weight: 300;
     margin-top: 0;
     margin-bottom: 48px;
+
+    @media (max-width: 768px) {
+      font-size: 20px;
+    }
   }
 
   &--google-keep {
@@ -57,14 +70,28 @@
     grid-column-gap: 10px;
     margin-top: 30px;
 
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+
     h3 {
       text-transform: uppercase;
       font-weight: 400;
       font-size: 20px;
+
+      @media (max-width: 768px) {
+        font-size: 18px;
+        margin-bottom: 0;
+      }
     }
 
     p {
       margin-top: 12px;
+
+      @media (max-width: 768px) {
+        font-size: 16px;
+        margin-bottom: 0;
+      }
     }
   }
 
@@ -72,12 +99,26 @@
     display: grid;
     grid-template-columns: 150px 1fr;
 
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+
     h4 {
       text-transform: uppercase;
+
+      @media (max-width: 768px) {
+        font-size: 18px;
+        margin-bottom: 0;
+      }
     }
 
     p {
       margin-top: 10px;
+
+      @media (max-width: 768px) {
+        font-size: 16px;
+        margin-bottom: 0;
+      }
     }
   }
 

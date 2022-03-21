@@ -10,7 +10,7 @@ const Footer = () => (
         </a>
         <div className={styles["footer__item"]}>Amsterdam, NL</div>
       </section>
-      <section>
+      <section className={styles["footer__section"]}>
         <div className={styles["footer__title"]}>Follow</div>
         <a
           className={styles["footer__item"]}

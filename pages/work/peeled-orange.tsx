@@ -58,7 +58,8 @@ const GoogleKeep: NextPage = () => {
                 <p>Hi-fi interactive prototype</p>
               </div>
               <div>
-                <h3>Project time:</h3>4 part-time weeks
+                <h3>Project time:</h3>
+                <p>4 part-time weeks</p>
               </div>
               <div>
                 <h3>Team:</h3>
