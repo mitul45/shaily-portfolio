@@ -31,17 +31,10 @@ const Home: NextPage = () => (
           <div>
             <h4 className={styles["hero__subtitle"]}>Hi, I am</h4>
             <h1 className={styles["hero__title"]}>Shaily</h1>
-            <h4 className={styles["hero__subtitle"]}>UX / UI Designer</h4>
-            <p>
-              Having my humble roots in Architecture, I am a curious designer
-              who likes to focus on human centric experience while building just
-              a product.
+            <h4 className={styles["hero__subtitle"]}>UX / UI Designer.</h4>
+            <p className={styles["hero__desc"]}>
+              I create meanigful journeys revolving around human aspirations and behavior.
             </p>
-            <p>
-              I seek to bring harmony and balance in the world with my creative
-              and critical design thinking.
-            </p>
-            <p>Explore. Build. Contribute.</p>
           </div>
           <div>
             <ButtonLink href="/Resume.pdf" title="See my resume" />

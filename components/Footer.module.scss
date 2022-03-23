@@ -30,10 +30,11 @@
     margin: 8px 0;
   }
 
+  a {
+    transition: color 0.2s linear;
+  }
+
   a:hover {
-    text-decoration: underline;
-    text-decoration-color: #ff7563;
-    text-decoration-thickness: 3px;
-    text-underline-offset: 5px;
+    color: #ff7563;
   }
 }

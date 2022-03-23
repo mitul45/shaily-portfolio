@@ -8,13 +8,18 @@ const CustomImage = (props: {
   src: StaticImageData;
   alt?: string;
   showAlt?: boolean;
+  allowZoom?: boolean;
 }) => {
-  const { src, alt, showAlt = true } = props;
+  const { src, alt, showAlt = true, allowZoom = true } = props;
   return (
     <>
-      <Zoom zoomMargin={50}>
+      {allowZoom ? (
+        <Zoom zoomMargin={50}>
+          <Image src={src} alt={alt} />
+        </Zoom>
+      ) : (
         <Image src={src} alt={alt} />
-      </Zoom>
+      )}
       {showAlt && <div className={cx("center", styles.alt)}>{alt}</div>}
     </>
   );

@@ -29,20 +29,21 @@ const GoogleKeep: NextPage = () => {
       <Header />
       <main>
         <article>
-          <section className={cx(styles.hero, styles.container)}>
-            <h1 className={styles["hero__title"]}>Google Keep</h1>
-            <h2 className={styles["hero__subtitle"]}>
-              Adding a new feature for travel enthusiastics to plan better
-            </h2>
-          </section>
           <section className={styles["hero--google-keep"]}>
             <div className={styles["hero__image"]}>
               <Image
                 src={HeroImage}
                 alt="Google Keep: Travel Template"
                 showAlt={false}
+                allowZoom={false}
               />
             </div>
+          </section>
+          <section className={cx(styles.hero, styles.container)}>
+            <h1 className={styles["hero__title"]}>Google Keep</h1>
+            <h2 className={styles["hero__subtitle"]}>
+              Adding a new feature for travel enthusiastics to plan better
+            </h2>
           </section>
           <div className={styles.container}>
             <section className={styles["section--meta"]}>

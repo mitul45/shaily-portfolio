@@ -16,13 +16,11 @@
   }
 
   &__link {
-    margin: 0 16px;
+    margin: 0 24px;
+    transition: color 0.2s linear;
 
     &:hover {
-      text-decoration: underline;
-      text-decoration-color: #ff7563;
-      text-decoration-thickness: 3px;
-      text-underline-offset: 10px;
+      color: #ff7563;
     }
   }
 }

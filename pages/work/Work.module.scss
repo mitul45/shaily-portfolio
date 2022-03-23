@@ -6,8 +6,8 @@
 
 .hero {
   &__image {
-    margin-left: calc((100vw - 760px) / 2);
-    max-width: 500px;
+    margin: 16px auto;
+    max-width: 760px;
 
     @media (max-width: 768px) {
       margin-left: 0;
@@ -17,7 +17,6 @@
   &__title {
     font-size: 48px;
     margin-bottom: 16px;
-    margin-top: 150px;
 
     @media (max-width: 768px) {
       font-size: 30px;
