@@ -33,7 +33,7 @@ const Home: NextPage = () => (
             <h1 className={styles["hero__title"]}>Shaily</h1>
             <h4 className={styles["hero__subtitle"]}>UX / UI Designer.</h4>
             <p className={styles["hero__desc"]}>
-              I create meanigful journeys revolving around human aspirations and behavior.
+              I create meaningful journeys revolving around human aspirations and behavior.
             </p>
           </div>
           <div>
