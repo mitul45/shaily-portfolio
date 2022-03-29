@@ -23,24 +23,30 @@ const Home: NextPage = () => (
 
     <Header />
     <main>
-      <section className={cx(styles.hero, styles.container)}>
-        <div className={styles["hero__profile"]}>
-          <Image src={ProfileImage} alt="Profile photo" />
-        </div>
-        <div className={styles["hero__content"]}>
-          <div>
-            <h4 className={styles["hero__subtitle"]}>Hi, I am</h4>
-            <h1 className={styles["hero__title"]}>Shaily</h1>
-            <h4 className={styles["hero__subtitle"]}>UX / UI Designer.</h4>
-            <p className={styles["hero__desc"]}>
-              I create meaningful journeys revolving around human aspirations and behavior.
-            </p>
+      <div className={styles["hero-bg"]}>
+        <section className={cx(styles.hero, styles.container)}>
+          <div className={styles["hero__profile"]}>
+            <Image src={ProfileImage} alt="Profile photo" />
           </div>
-          <div>
-            <ButtonLink href="/Resume Shaily Gandhi.pdf" title="See my resume" />
+          <div className={styles["hero__content"]}>
+            <div>
+              <h4 className={styles["hero__subtitle"]}>Hi, I am</h4>
+              <h1 className={styles["hero__title"]}>Shaily</h1>
+              <h4 className={styles["hero__subtitle"]}>UX / UI Designer.</h4>
+              <p className={styles["hero__desc"]}>
+                I create meaningful journeys revolving around human aspirations
+                and behavior.
+              </p>
+            </div>
+            <div>
+              <ButtonLink
+                href="/Resume Shaily Gandhi.pdf"
+                title="See my resume"
+              />
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
       <section className={cx(styles.section, styles.container)}>
         <h1 className={styles["section__title"]}>Work</h1>
         <div className={styles.projects}>
