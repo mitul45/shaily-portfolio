@@ -54,6 +54,10 @@
 .section {
   margin-top: 150px;
 
+  @media (max-width: 768px) {
+    margin-top: 50px;
+  }
+
   &__title {
     text-align: center;
     font-size: 28px;
@@ -123,5 +127,60 @@
 
   &--read-more {
     text-align: center;
+  }
+
+  &--other-articles {
+    height: 100px;
+    max-width: 1160px;
+    margin: 150px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 768px) {
+      margin: 50px auto;
+    }
+
+    &__next,
+    &__prev {
+      display: flex;
+      align-items: center;
+
+      &__arrow {
+        margin: 0 16px;
+
+        @media (max-width: 768px) {
+          margin: 0 8px;
+        }
+      }
+
+      &__text {
+        display: flex;
+        flex-direction: column;
+
+        &__title {
+          font-size: 48px;
+
+          @media (max-width: 768px) {
+            font-size: 18px;
+          }
+        }
+
+        &__subtitle {
+          font-size: 24px;
+          font-weight: 300;
+
+          @media (max-width: 768px) {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    &__prev {
+      &__text {
+        align-items: end;
+      }
+    }
   }
 }

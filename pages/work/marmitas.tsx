@@ -1,5 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import NextImage from "next/image";
+import NextLink from "next/link";
 import cx from "classnames";
 import styles from "./Work.module.scss";
 
@@ -147,6 +149,39 @@ const Marmitas: NextPage = () => {
               />
             </section>
           </div>
+          <section
+            className={cx(styles.section, styles["section--other-articles"])}
+          >
+            <NextLink href="/work/google-keep">
+              <a className={styles["section--other-articles__prev"]}>
+                <div className={styles["section--other-articles__prev__arrow"]}>
+                  <NextImage
+                    src="/left-arrow.svg"
+                    alt="Left arrow"
+                    width={48}
+                    height={48}
+                  />
+                </div>
+                <div className={styles["section--other-articles__prev__text"]}>
+                  <span
+                    className={
+                      styles["section--other-articles__prev__text__title"]
+                    }
+                  >
+                    Google Keep
+                  </span>
+                  <span
+                    className={
+                      styles["section--other-articles__prev__text__subtitle"]
+                    }
+                  >
+                    Previous
+                  </span>
+                </div>
+              </a>
+            </NextLink>
+            <div></div>
+          </section>
         </article>
       </main>
       <Footer />

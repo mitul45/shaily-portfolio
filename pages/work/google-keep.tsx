@@ -1,5 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import NextImage from "next/image";
+import NextLink from "next/link";
 import cx from "classnames";
 import styles from "./Work.module.scss";
 
@@ -151,6 +153,66 @@ const GoogleKeep: NextPage = () => {
               />
             </section>
           </div>
+          <section
+            className={cx(styles.section, styles["section--other-articles"])}
+          >
+            <NextLink href="/work/peeled-orange">
+              <a className={styles["section--other-articles__prev"]}>
+                <div className={styles["section--other-articles__prev__arrow"]}>
+                  <NextImage
+                    src="/left-arrow.svg"
+                    alt="Left arrow"
+                    width={48}
+                    height={48}
+                  />
+                </div>
+                <div className={styles["section--other-articles__prev__text"]}>
+                  <span
+                    className={
+                      styles["section--other-articles__prev__text__title"]
+                    }
+                  >
+                    Peeled Orange
+                  </span>
+                  <span
+                    className={
+                      styles["section--other-articles__prev__text__subtitle"]
+                    }
+                  >
+                    Previous
+                  </span>
+                </div>
+              </a>
+            </NextLink>
+            <NextLink href="/work/marmitas">
+              <a className={styles["section--other-articles__next"]}>
+                <div className={styles["section--other-articles__next__text"]}>
+                  <span
+                    className={
+                      styles["section--other-articles__next__text__title"]
+                    }
+                  >
+                    Marmitas Da Horta
+                  </span>
+                  <span
+                    className={
+                      styles["section--other-articles__next__text__subtitle"]
+                    }
+                  >
+                    Next
+                  </span>
+                </div>
+                <div className={styles["section--other-articles__next__arrow"]}>
+                  <NextImage
+                    src="/right-arrow.svg"
+                    alt="Right arrow"
+                    width={48}
+                    height={48}
+                  />
+                </div>
+              </a>
+            </NextLink>
+          </section>
         </article>
       </main>
       <Footer />
