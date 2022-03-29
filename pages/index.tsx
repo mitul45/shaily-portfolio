@@ -37,7 +37,7 @@ const Home: NextPage = () => (
             </p>
           </div>
           <div>
-            <ButtonLink href="/Resume.pdf" title="See my resume" />
+            <ButtonLink href="/Resume Shaily Gandhi.pdf" title="See my resume" />
           </div>
         </div>
       </section>
