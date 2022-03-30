@@ -21,6 +21,9 @@ const Header = () => {
           <Link href="/work">
             <a className={styles["header__link"]}>Work</a>
           </Link>
+          <Link href="/about">
+            <a className={styles["header__link"]}>About</a>
+          </Link>
         </div>
       </div>
     </header>
